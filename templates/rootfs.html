@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RootFS - Find Funding for Your Startup</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Include the navbar -->
+    <div class="navbar-wrapper">
+        <!-- Use Flask's include directive to include the navbar.html file -->
+        {% include 'navbar.html' %}
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Welcome to RootFS</h1>
+                <p>At RootFS, we specialize in helping startups find the funding they need to turn their vision into reality. Our dedicated team of experts is here to guide you through the intricate landscape of startup funding, connecting you with the right investors and resources.</p>
+                <p>Why choose RootFS for your funding journey?</p>
+                <ul>
+                    <li><strong>Extensive Network:</strong> We have established a vast network of investors, venture capitalists, and angel investors who are actively looking for promising startups to invest in.</li>
+                    <li><strong>Tailored Approach:</strong> We understand that each startup is unique, with its own specific needs and goals. We work closely with you to develop a customized funding strategy that aligns with your vision and growth plans.</li>
+                    <li><strong>Expert Guidance:</strong> Our experienced team provides expert guidance at every step of the funding process. From preparing your pitch deck to negotiating terms, we offer comprehensive support to maximize your chances of securing funding.</li>
+                    <li><strong>Industry Insights:</strong> With our in-depth knowledge of the startup ecosystem, we provide valuable insights into market trends, investor preferences, and industry best practices, empowering you to make informed decisions.</li>
+                </ul>
+                <p>Let us be your trusted partner in your funding journey. Together, we can unlock the potential of your startup and pave the way for growth and success.</p>
+                <a href="#contact" class="btn btn-primary">Get in touch</a>
+            </div>
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/funding.jpg') }}" alt="Finding Funding for Startups" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

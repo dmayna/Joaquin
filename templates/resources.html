@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resources</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Include the navbar -->
+    <div class="navbar-wrapper">
+        <!-- Use Flask's include directive to include the navbar.html file -->
+        {% include 'navbar.html' %}
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Public Resources for Startups</h1>
+                <p>Welcome to our public resources page, designed to provide valuable information and tools for startups and entrepreneurs. We believe in empowering the startup community by sharing knowledge and resources that can contribute to their success.</p>
+                <p>On this page, you will find a curated collection of resources that cover various aspects of startup development, funding, growth strategies, and more. These resources are available for free, and we encourage you to explore and utilize them to fuel your entrepreneurial journey.</p>
+                <p>Our collection includes:</p>
+                <ul>
+                    <li>Startup Guides and Playbooks</li>
+                    <li>Templates for Pitch Decks and Business Plans</li>
+                    <li>Market Research Reports and Analysis</li>
+                    <li>Insights on Investor Pitching and Fundraising Strategies</li>
+                    <li>Case Studies of Successful Startups</li>
+                    <li>Best Practices for Product Development and Marketing</li>
+                </ul>
+                <p>We regularly update and add new resources to keep up with the evolving startup landscape. Be sure to check back often and subscribe to our newsletter to stay informed about the latest additions.</p>
+                <p>Take advantage of these resources to gain valuable insights, refine your strategies, and accelerate your startup's growth. Remember, knowledge is power, and together we can drive innovation and success in the startup ecosystem.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/resources.jpg') }}" alt="Public Resources" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
